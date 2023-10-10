@@ -11,6 +11,7 @@ import Genres from "../../../components/genres/Genres";
 import CircleRating from "../../../components/circleRating/CircleRating";
 import Img from "../../../components/lazyLoadImage/Img.jsx";
 import PosterFallback from "../../../assets/no-poster.png";
+import { PlayIcon } from "../PlayIcon";
 
 const DetailsBanner = ({ video, crew }) => {
 	const { mediaType, id } = useParams();
@@ -79,6 +80,12 @@ const DetailsBanner = ({ video, crew }) => {
 													1
 												)}
 											/>
+                                            <div className="playbtn">
+                                                <PlayIcon/>
+                                                <span className="text">
+                                                    Watch Trailer
+                                                </span>
+                                            </div>
 										</div>
 									</div>
 								</div>
